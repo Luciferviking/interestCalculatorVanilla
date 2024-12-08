@@ -101,9 +101,7 @@ input::-webkit-inner-spin-button {
   margin-right: 6px;
 }
 #footer {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 50px;
   font-size: 12px;
+  text-align: center;
 }
