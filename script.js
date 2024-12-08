@@ -12,8 +12,9 @@ const timePeriodCont = document.getElementById("timePeriod");
 const emiCalculatedCont = document.getElementById("emiCalculated");
 const pieChartCont = document.getElementById("pieChart");
 const interestPaidCont = document.getElementById("interestPaid");
+const totalPaidCont = document.getElementById("totalPaid");
 
-const output = document.getElementById("demoCont");
+
 
 
 var principleAmount;
@@ -71,17 +72,17 @@ function pieChart(){
 
 
 
-    console.log("interest amount");
-    console.log(interestAmountDeg);
-    console.log("principle amount deg");
-    console.log(principleAmountDeg);
+    //console.log("interest amount");
+    //console.log(interestAmountDeg);
+    //console.log("principle amount deg");
+    //console.log(principleAmountDeg);
 }
 
 //don't touch it will break
 document.addEventListener("input", function(){
  
     //output.textContent = `Current input value: ${principleAmountCont.value}`;
-    principleAmount = principleAmountCont.value;
+    principleAmount = (principleAmountCont.value);
     rateOfInterest = rateOfInterestCont.value;
     timePeriod = timePeriodCont.value;
     emiCalculatedCont.textContent = calculateEmi();
@@ -92,6 +93,8 @@ document.addEventListener("input", function(){
     interestAmount = Math.floor((interestAmount*100)/100).toFixed(2);
     pieChart();
     interestPaidCont.textContent = interestAmount; 
+    totalPaidCont.textContent = (calculateEmi()*12*timePeriod ).toLocaleString("en-IN");
+
   });
 
 
