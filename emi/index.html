@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMI</title>
     <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>principal amount</p>
-    <input type="number" value="10000" id="principalAmount" />
-    <p id="demoCont">demo cont</p>
+    <div id="mainCont">
+      <h1>EMI Calculator</h1>
+
+      <div class="inputCont">
+        <p>principle amount</p>
+        <input type="number" value="10000" id="principleAmount" />
+        <p id="demoCont">demo cont</p>
+      </div>
+    </div>
 
     <p>rate of interest</p>
     <input type="number" value="11" id="rateOfInterest" />
@@ -18,5 +26,11 @@
 
     <p>calculated emi</p>
     <p id="emiCalculated">this is the calculated emi</p>
+
+    <p>interest paid</p>
+    <div id="interestPaid"></div>
+
+    <p>pie chart</p>
+    <div id="pieChart">hello</div>
   </body>
 </html>

@@ -1,0 +1,22 @@
+:root {
+  --principleAmountCss: 0deg;
+  --interestAmountCss: 0deg;
+}
+
+#pieChart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    pink var(--principleAmountCss),
+    lightblue var(--interestAmountCss)
+  );
+}
+
+#mainCont {
+  border: 2px solid red;
+}
+.inputCont {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
