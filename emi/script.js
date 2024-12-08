@@ -80,7 +80,7 @@ function pieChart(){
 //don't touch it will break
 document.addEventListener("input", function(){
  
-    output.textContent = `Current input value: ${principleAmountCont.value}`;
+    //output.textContent = `Current input value: ${principleAmountCont.value}`;
     principleAmount = principleAmountCont.value;
     rateOfInterest = rateOfInterestCont.value;
     timePeriod = timePeriodCont.value;
